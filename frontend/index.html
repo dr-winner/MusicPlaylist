@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Playlist</h1>
+        <div class="search-section">
+            <input type="text" id="spotify-search" placeholder="Search Spotify...">
+            <button onclick="searchSpotify()">Search</button>
+        </div>
+        <div id="spotify-results"></div>
+        <hr>
+        <h2>Your Playlist</h2>
+        <ul id="playlist"></ul>
+        <div class="add-section">
+            <input type="text" id="song-title" placeholder="Song Title">
+            <input type="text" id="song-artist" placeholder="Artist">
+            <input type="text" id="song-duration" placeholder="Duration (mm:ss)">
+            <button onclick="addSong()">Add Song</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
